@@ -7,19 +7,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 border">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link active text-warning bg" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-warning" href="informacion.html">Nosotros</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-warning" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-warning" href="informacion.html">Información</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-warning" href="servicios.html">Servicios</a>
+              </li>
 
-    
 
+
+            </ul>
+
+            <div class="pe-5 d-flex justify-content-end w-100">
+                <button class="btn btn-outline-warning me-4">
+                    Login
+                </button>
+                <button class="btn btn-outline-warning">
+                    Registrarse
+                </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     <h1 class="text-center pt-5 fw-bold">
+<<<<<<< Updated upstream
         MERCADO CRIPTO
     </h1>
     <div class="justify-content-center mb-5 d-flex mt-5">
         <img class="mb-5" src="">
+=======
+        <img src ="login.JPG" height="60">
+    </h1>        
+    <div class ="text-center">
+        <a>Future´s Finance</a>
+>>>>>>> Stashed changes
     </div>
 
 
 </head>
 <body class="p-5 mt-5">
+    <div class="tradingview-widget-container justify-content-end">
+        <div id="tradingview_6efd0"></div>
+        <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Gráfico</span></a> por TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.widget(
+        {
+        "width": 980,
+        "height": 610,
+        "symbol": "NASDAQ:AAPL",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
+        "locale": "es",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "container_id": "tradingview_6efd0"
+    }
+        );
+        </script>
+    </div>
 
     <div class="mt-5 d-flex justify-content-center">
         <input class="me-4" id="symbol" placeholder="Símbolo de la moneda">
@@ -35,7 +100,7 @@
 
     <div class=" d-flex justify-content-center p-5">
         <table class="table table-striped mt-5">
-            <thead>
+            <thead class="thead-dark">
                 <tr>                  
                     <th class="text-center" scope="col">Símbolo</th>
                     <th class="text-center" scope="col">Precio</th>
@@ -49,6 +114,9 @@
             </tbody>
         </table>
 </div>
+    <div>
+        
+    </div>
     
 </body>
     
