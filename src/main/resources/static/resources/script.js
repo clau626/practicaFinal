@@ -1,6 +1,20 @@
 let datos=[];
 let allShown=false;
 
+
+//Obtiene el nombre del usuario que ha iniciado la sesión
+let getUser = async () => {
+    //userText = document.getElementById("username");
+    let request = await fetch("/api/v1/user");
+    if(request.ok){
+        const user = await request.json();
+        //userText.innerHTML=user.username;
+    }
+    else{
+        console.log("Error get User")
+    }
+}
+
 let llamarBinance=async ()=>{
     let peticion = await fetch("https://api2.binance.com/api/v3/ticker/24hr", {
         method: "GET",
@@ -36,6 +50,7 @@ let selectDatos = (datos,symbols)=>{
 }
 
 llamarBinance();
+getUser();
 
 
 let addCoin = ()=>{
